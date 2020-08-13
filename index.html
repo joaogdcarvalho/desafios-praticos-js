@@ -15,12 +15,13 @@
       */
 
       function retornaGenero(id) {
-        if (id === 'M') {
-          return 'Masculino';
-        } else if (id === 'F') {
-          return 'Feminino';
-        } else {
-          return 'Outro';
+        switch (id) {
+          case 'M':
+            return 'Masculino';
+          case 'F':
+            return 'Feminino';
+          default:
+            return 'Outro';
         }
       }
 
