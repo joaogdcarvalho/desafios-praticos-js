@@ -8,24 +8,28 @@
   </head>
   <body>
     <script>
-      /*
-      [ =   ] atribuição
-      [ ==  ] comparação entre valores
-      [ === ] comparação entre valores e tipagem
-      */
+      // AND, OR, NOT
 
-      function retornaGenero(id) {
-        switch (id) {
-          case 'M':
-            return 'Masculino';
-          case 'F':
-            return 'Feminino';
-          default:
-            return 'Outro';
-        }
+      var genero = 'M', idade = 23;
+
+      // verdadeiro = se ambas condições forem verdadeiras.
+      if (sexo === 'M' && idade >= 18) {
+        console.log('OK');
       }
 
-      console.log(retornaGenero('M'));
+      // verdadeiro = se ao menos uma condição for verdadeira.
+      if (genero === 'M' || idade >= 18) {
+         console.log('OK');
+      }
+
+      // verdadeiro = condição de negação.
+      if (genero !== 'M') {
+         console.log('OK');
+       }
+
+       // atribuindo resultado condicional em variável
+       var masculino = genero === 'M';
+       console.log(masculino);
 
     </script>
   </body>
