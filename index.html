@@ -8,12 +8,24 @@
   </head>
   <body>
     <script>
-      // condição ternária
-      var genero = 'M';
+      /*
+      estrutura de repetição - for
+      recomendável usar quando souber quantidade de iterações que deverão ser executadas
+      */
+      for (var f = 0; f <= 100; f++) {
+        console.log(f);
+      }
 
-      var retorno = (genero === 'M') ? 'Masculino' : 'Feminino';
-      
-      console.log(retorno);
+      /*
+      estrutura de repetição - while
+      recomendável usar quando não souber quantas iterações deverão ser executadas
+      */
+      var w = 219345872;
+      while(w > 50 ) {
+        console.log(w);
+        w /= 5;
+      }
+
     </script>
   </body>
 </html>
