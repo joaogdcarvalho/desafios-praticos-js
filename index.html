@@ -8,29 +8,12 @@
   </head>
   <body>
     <script>
-      // AND, OR, NOT
+      // condição ternária
+      var genero = 'M';
 
-      var genero = 'M', idade = 23;
-
-      // verdadeiro = se ambas condições forem verdadeiras.
-      if (sexo === 'M' && idade >= 18) {
-        console.log('OK');
-      }
-
-      // verdadeiro = se ao menos uma condição for verdadeira.
-      if (genero === 'M' || idade >= 18) {
-         console.log('OK');
-      }
-
-      // verdadeiro = condição de negação.
-      if (genero !== 'M') {
-         console.log('OK');
-       }
-
-       // atribuindo resultado condicional em variável
-       var masculino = genero === 'M';
-       console.log(masculino);
-
+      var retorno = (genero === 'M') ? 'Masculino' : 'Feminino';
+      
+      console.log(retorno);
     </script>
   </body>
 </html>
