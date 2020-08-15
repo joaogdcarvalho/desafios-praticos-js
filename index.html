@@ -8,23 +8,19 @@
   </head>
   <body>
     <script>
-      /*
-      estrutura de repetição - for
-      recomendável usar quando souber quantidade de iterações que deverão ser executadas
-      */
-      for (var f = 0; f <= 100; f++) {
-        console.log(f);
+      // intervalo - executa função diversas vezes, em determinado período de tempo
+      function exibeAlgo() {
+        console.log('Hello World');
       }
 
-      /*
-      estrutura de repetição - while
-      recomendável usar quando não souber quantas iterações deverão ser executadas
-      */
-      var w = 219345872;
-      while(w > 50 ) {
-        console.log(w);
-        w /= 5;
-      }
+      // sem parenteses após nome da função, referencia (passa escopo) função
+      setInterval(exibeAlgo, 1000);
+
+      // parenteses após nome da função, executa função
+      // setInterval(exibeAlgo(), 1000);
+      
+      // timeout - executa função apenas uma vez, conforme tempo de delay especificado
+      setTimeout(exibeAlgo, 5000);
 
     </script>
   </body>
