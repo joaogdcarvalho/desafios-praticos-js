@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Curso Javascript
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+
+      function pares(valorInicial, valorFinal) {
+        var sequencia = [], index = 0, contador = valorInicial;
+
+        while(contador <= valorFinal) {
+
+          if(contador%2 === 0) {
+            sequencia[index] = contador;
+            index++;
+          }
+          
+          contador++;
+        }
+
+        return sequencia;
+      };
+
+      console.log(pares(32, 321));
+
+    </script>
+  </body>
+</html>
