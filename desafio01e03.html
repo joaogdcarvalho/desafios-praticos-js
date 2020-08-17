@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Curso Javascript
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+
+      function temHabilidade(skills) {
+
+        var consulta = "Javascript"
+        var status = false;
+
+        if (skills.indexOf(consulta) >= 0){
+          status = true;
+        };
+
+        return status;
+      };
+
+      var skills = ["Javascript", "ReactJS", "React Native"];
+      console.log(temHabilidade(skills));
+
+    </script>
+  </body>
+</html>
