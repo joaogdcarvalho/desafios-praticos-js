@@ -5,40 +5,24 @@
   </head>
   <body>
     <div id="app">
-      <input type="text" name="nomeNm" id="nomeId" class="nomeCl" />
-      <input type="text" name="nomeNm2" id="nomeId2" class="nomeCl2" />
-      <button class="botao">Adicionar</button>
+      <input id="nome" />
     </div>
 
     <script>
-      var inputElement1 = document.getElementById('nomeId');
-      console.log(inputElement1);
+      var linkElement = document.createElement('a');
 
-      var inputElement2 = document.getElementsByTagName('input')[0];
-      console.log(inputElement2);
+      linkElement.setAttribute('href','http://rocketseat.com.br');
+      linkElement.setAttribute('title', 'Site da Rocketseat');
 
-      var inputElement3 = document.getElementsByClassName('nomeCl')[0];
-      console.log(inputElement3);
+      var textElement = document.createTextNode('Acessar site da Rocketseat');
 
-      var querySelectorDivInput = document.querySelector('div#app input');
-      console.log(querySelectorDivInput);
+      linkElement.appendChild(textElement);
 
-      var querySelectorInputName = document.querySelector('input[name=nomeNm]');
-      console.log(querySelectorInputName);
+      var containerElement = document.querySelector('#app');
+      containerElement.appendChild(linkElement);
 
-      var querySelectorInput = document.querySelector('input');
-      console.log(querySelectorInput);
-
-      var querySelectorInput = document.querySelectorAll('input');
-      console.log(querySelectorInput);
-
-      var inputElement = document.querySelector('input[name=nomeNm2]');
-      var btnElement = document.querySelector('button.botao');
-
-      btnElement.onclick = function() {
-        var text = inputElement.value;
-        alert(text);
-      }
+      var inputElement = document.querySelector('#nome');
+      containerElement.removeChild(inputElement);
     </script>
   </body>
 </html>
