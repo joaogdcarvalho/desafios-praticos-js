@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Curso Javascript
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+
+      function descrevaHabilidades(usuarios) {
+
+        var mensagem = '';
+
+        for (usuario of usuarios) {
+          mensagem +=
+            "O " + usuario.nome + 
+            " possui as habilidades: " + usuario.habilidades.join(', ') + "\n";
+        };
+
+        return mensagem;
+      };
+
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+      console.log(descrevaHabilidades(usuarios));
+
+    </script>
+  </body>
+</html>
