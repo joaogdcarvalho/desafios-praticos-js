@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <button onclick="exibeQuadrado()">Exibir Quadrado</button>
+      <div class="quadro"></div>
+    </div>
+
+    <script>
+      function exibeQuadrado() {
+          var quadrado = document.querySelector('.quadro');
+          quadrado.style.marginTop = 20;
+          quadrado.style.width = 100;
+          quadrado.style.height = 100;
+          quadrado.style.backgroundColor = '#FF0000';
+        }
+    </script>
+  </body>
+
+</html>
