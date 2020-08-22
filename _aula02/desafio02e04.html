@@ -1,0 +1,33 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+  </head>
+
+    <body>
+      <input type="text" name="nome">
+      <button onClick="adicionar()">Adicionar</button>
+      <ul></ul>
+
+    <script>
+
+      function adicionar() {
+
+        var inputNome = document.querySelector('input[name=nome]');
+
+        if (inputNome.value !== '') {
+          var listElement = document.querySelector('ul');
+
+          var itemElement = document.createElement('li');
+          var textElement = document.createTextNode(inputNome.value);
+          
+          itemElement.appendChild(textElement);
+          listElement.appendChild(itemElement);
+        }
+      }
+      
+    </script>
+  </body>
+
+</html>
