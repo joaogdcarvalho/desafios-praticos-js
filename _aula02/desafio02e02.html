@@ -1,0 +1,44 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <button onclick="exibeQuadrado()">Exibir Quadrado</button>
+      <div class="quadro" onmouseover="mudaQuadrado()"></div>
+    </div>
+
+    <script>
+
+      function exibeQuadrado() {
+        var quadrado = document.querySelector('.quadro');
+
+        quadrado.style.marginTop = 20;
+        quadrado.style.width = 100;
+        quadrado.style.height = 100;
+        quadrado.style.backgroundColor = '#000000';
+      }
+
+      function mudaQuadrado() {
+        var quadrado = document.querySelector('.quadro');
+        quadrado.style.backgroundColor = getRandomColor();
+      }
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+      }
+      
+    </script>
+  </body>
+
+</html>
