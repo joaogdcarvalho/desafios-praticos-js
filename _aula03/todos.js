@@ -2,11 +2,8 @@ var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var todos = [
-  'Fazer café',
-  'Estudar Javascript',
-  'Acessar comunidade da Rocketseat'
-];
+// inicia vetor com itens armazenados localmente ou valor padrão vazio para vetor
+var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 function renderTodos() {
 
@@ -44,7 +41,9 @@ function addTodo() {
   if (todoText !== '') {
     todos.push(todoText);
     inputElement.value = '';
+
     renderTodos();
+    saveToStorage();
   }
 }
 
@@ -56,4 +55,9 @@ function deleteTodo(pos) {
   todos.splice(pos, 1);
 
   renderTodos();
+  saveToStorage();
+}
+
+function saveToStorage() {
+  localStorage.setItem('list_todos', JSON.stringify(todos));
 }
