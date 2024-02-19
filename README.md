@@ -6,7 +6,7 @@ O Desafios Práticos JS é um conjunto de exercícios e desafios voltados para a
 
 ## Estrutura do Projeto
 
-O projeto possui uma organização simples e intuitiva:
+O projeto está estruturado da seguinte forma:
 
 ```
 _desafios-praticos-js/
@@ -52,7 +52,9 @@ _desafios-praticos-js/
 - Arquivos HTML e JavaScript para cada desafio.
 - Desenvolvimento progressivo das habilidades em JavaScript.
 
-## Histórico de Commits
+## Histórico do Projeto
+
+### Commits
 
 O histórico de commits fornece uma visão cronológica do desenvolvimento do curso, com mensagens descritivas que destacam as principais etapas e implementações. Algumas das realizações notáveis incluem:
 
@@ -73,7 +75,7 @@ O histórico de commits fornece uma visão cronológica do desenvolvimento do cu
 - **Melhorias e Estruturação:**
   - Aprimoramento do README.md para fornecer uma compreensão clara da estrutura do repositório e do conteúdo do curso.
 
-## Como Contribuir
+## Diretrizes de Contribuição
 
 O Desafios Práticos JS é um projeto de código aberto e estamos abertos a contribuições. Sinta-se à vontade para abrir pull requests, reportar bugs ou sugerir novos desafios e funcionalidades.
 
